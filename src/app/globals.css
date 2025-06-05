@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+img{
+    filter: brightness(80%) !important;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    nav{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        border: 0;
+    }
+    header, footer {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
