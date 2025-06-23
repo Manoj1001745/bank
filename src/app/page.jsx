@@ -26,7 +26,10 @@ export default function Home() {
    {post.slice(0, 2).map(a => (
      <section key={a.id} className='py-4'>
        <div className="container mx-auto text-center py-3">
-         <h1 className='text-3xl text-red-600 font-bold'>{a.title.rendered}</h1>
+        <div className='bg-red-600'>
+        <marquee  behavior="alternet" direction="left">
+         <h1 className='text-3xl  text-white font-bold py-3'>{a.title.rendered}</h1></marquee>
+         </div>
          <img className='w-full object-cover rounded-2xl' src={a.featured_image_src} alt="" />
        </div>
      </section>
@@ -38,7 +41,7 @@ export default function Home() {
      </div>
    </section>
 
-   {post.slice(1, 6).map(a => (
+   {post.slice(1, 4).map(a => (
      <section key={a.id} className='py-4'>
        <div className="container mx-auto">
          <div className='relative'>
@@ -53,7 +56,7 @@ export default function Home() {
 
    <section>
      <div className="container mx-auto justify-center">
-       <img className='w-[750px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2019/03/prabhumoney.gif" alt="" />
+       <img className='w-[850px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2019/03/prabhumoney.gif" alt="" />
      </div>
    </section>
 
@@ -72,6 +75,13 @@ export default function Home() {
    </section>
 
    <ProductByCat id={89} title="अर्थ" />
+
+   <section className='py-2'>
+        <div className="container mx-auto">
+            <img className='w-full' src="https://bankingkhabar.com/wp-content/uploads/2024/09/1000-x-100.gif" alt="" />
+        </div>
+    </section>
+    <ProductByCat id={86} title="कोरोना अपडेट" />
    </>
   );
 }

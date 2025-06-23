@@ -4,6 +4,43 @@ img{
     filter: brightness(80%) !important;
 }
 
+.nav-1:hover{
+    color: rgb(57, 55, 55);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+
+}
+
+nav{
+     
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+}
+.navbar ul {
+      list-style: none;
+     
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .navbar li {
+      
+      color: white;
+      
+    }
+.pp-1:hover{
+    color: rgb(76, 39, 39);
+   transition: all 0.1s ease-in-out;
+    transform: scale(1.0);
+}
+
+.box-1{
+   box-sizing: border-box;
+   border-radius: 20px;
+    padding: 20px;
+   border: 1px solid #ccc;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
@@ -30,3 +67,4 @@ nav ul {
         padding: 15px;
     }
 }
+

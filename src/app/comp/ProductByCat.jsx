@@ -13,16 +13,22 @@ function ProductByCat(props) {
     }, [props.id])
   return (
    <section className='py-5 aa'>
-    <div className="container mx-auto">
-      <div className='flex justify-between items-center  '>
-     <h3><div className="bg-red-600 text-2xl font-bold px-4 py-2 border-r-2 rounded-2xl"> {props.title}</div></h3> 
+   
+    <div className="container mx-auto ">
+       <hr />
+      <div className='flex justify-center items-center py-2 bg-red-600'>
+     <h3><div className=" text-2xl font-bold px-4 py-2 border-r-2 rounded-2xl"> {props.title}</div></h3> 
      </div>
-     <div className="flex">
+     <div className="flex py-4 gap-2">
        {post.slice(0, 4).map(a => (
-         <div key={a.id} className='p-3'>
+         <div key={a.id} className='p-3 box-1'>
           <Link href={`/details/${a.id}`}>
-           <img className='h-[250px] object-cover border-2' src={a.featured_image_src} alt="" />
-           <h1 className='text-2xl text-red-600 font-bold p-4 m-3'>
+           <img className='h-[240px] object-cover border-2' src={a.featured_image_src} alt="" />
+           <div className='py-3'>
+ <hr />
+           </div>
+          
+           <h1 className='pp-1 text-2xl text-red-600 font-bold p-2 m-2'>
              {a.title.rendered}
            </h1>
            </Link>

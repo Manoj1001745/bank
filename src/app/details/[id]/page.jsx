@@ -23,14 +23,15 @@ function page() {
     }, [id]);
   return (
    <>
+   
   
    {posts && posts.yoast_head_json && posts.content ? (
      <>
      <section className='py-5'>
        <div className="container mx-auto text-center border-2 p-4 item-center">
-       <h2 className='font-bold text-3xl p-3'>{posts.yoast_head_json.title}</h2>
+       <h2 className='font-bold text-3xl py-3'>{posts.yoast_head_json.title}</h2>
       
-          <img className='w-full h-[800px] object-cover' src={posts.featured_image_src} alt="" />
+          <img className='w-full object-cover rounded-2xl py-4' src={posts.featured_image_src} alt="" />
        <h3 dangerouslySetInnerHTML={{ __html: posts.content.rendered }}></h3>
        </div>
        </section>
