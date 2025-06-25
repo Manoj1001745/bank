@@ -13,17 +13,9 @@ function Header() {
       .then(res => setCat(res.data));
   }, []);
 
-  const toggleMenu = () => {
-    setMenuOpen(prev => !prev); // Toggle show/hide
-  };
-
-  const closeMenu = () => {
-    setMenuOpen(false); // Force close (e.g., on link click)
-  };
-
   return (
     <>
-      {/* Top Section */}
+      {/* Top Black Bar */}
       <section className='text-[#f2f2f2] bg-[#1a1a1a]'>
         <div className="container mx-auto">
           <div className='flex justify-between items-center p-2'>
@@ -51,45 +43,38 @@ function Header() {
 
       {/* Navbar */}
       <nav className='bg-red-700 text-white sticky top-0 z-50'>
-        <div className="container mx-auto flex  items-center px-2 py-2">
-          {/* Desktop Menu */}
-          <ul className='hidden lg:flex gap-4 flex-wrap'>
-            {cat.map(a => (
-              <li
-                key={a.id}
-                className='border border-[#ec6b6b] px-3 py-1 text-lg hover:bg-red-600 transition rounded pp-1'
-              >
-                <Link href={`/category/${a.id}`}>{a.name}</Link>
-              </li>
-            ))}
-          </ul>
+        <div className="container mx-auto flex justify-between items-center px-4 py-3">
+          
 
-          {/* Hamburger Button */}
-          <button className='lg:hidden text-3xl' onClick={toggleMenu}>
+         
+          
+
+          {/* Toggle button for mobile */}
+          <button className='lg:hidden text-3xl' onClick={() => setMenuOpen(prev => !prev)}>
             {menuOpen ? <IoClose /> : <IoMenu />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className='lg:hidden bg-red-800'>
-            <ul className='flex flex-col px-4 py-2'>
-              {cat.map(a => (
-                <li
-                  key={a.id}
-                  className='border-b border-red-500 py-2 text-lg'
+        {/* Mobile Menu Dropdown */}
+        <div
+          className={`lg:hidden  duration-300 ease-in-out overflow-hidden bg-red-800 ${menuOpen ? "max-h-[1000px]" : "max-h-0"}`}
+        >
+          <ul className='flex flex-col px-4 py-2'>
+            {cat.map(a => (
+              <li key={a.id} className='border-b border-red-500 py-2 text-lg'>
+                <Link
+                  href={`/category/${a.id}`}
+                  onClick={() => setMenuOpen(false)}
                 >
-                  <Link href={`/category/${a.id}`} onClick={closeMenu}>
-                    {a.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+                  {a.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
 
-      {/* Date/Time Section */}
+      {/* Date & Time */}
       <section className='p-2'>
         <div className="container mx-auto flex justify-end border-b-2 p-2">
           <span>Wednesday, Sep 19, 2025 </span>
@@ -97,7 +82,7 @@ function Header() {
         </div>
       </section>
 
-      {/* Banner Ad */}
+      {/* Bottom Ad Banner */}
       <section className='py-2'>
         <div className="container mx-auto">
           <img className='w-full' src="https://bankingkhabar.com/wp-content/uploads/2024/09/1000-x-100.gif" alt="Banner" />
@@ -107,4 +92,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;

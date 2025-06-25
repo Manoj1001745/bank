@@ -19,21 +19,25 @@ function ProductByCat(props) {
       <div className='flex justify-center items-center py-2 bg-red-600'>
      <h3><div className=" text-2xl font-bold px-4 py-2 border-r-2 rounded-2xl"> {props.title}</div></h3> 
      </div>
-     <div className="flex py-4 gap-2">
+     <div className="box-11 flex py-4 gap-2">
        {post.slice(0, 4).map(a => (
-         <div key={a.id} className='p-3 box-1'>
+         <div key={a.id} className='box-33 box-1'>
           <Link href={`/details/${a.id}`}>
-           <img className='h-[240px] object-cover border-2' src={a.featured_image_src} alt="" />
+           <img className='h-[250px] object-cover border-2' src={a.featured_image_src} alt="" />
            <div className='py-3'>
  <hr />
-           </div>
-          
-           <h1 className='pp-1 text-2xl text-red-600 font-bold p-2 m-2'>
+ <h1 className='pp-1 text-2xl text-red-600 font-bold py-3 my-2'>
              {a.title.rendered}
            </h1>
+           </div>
+          
+           
            </Link>
+          
+
          </div>
        ))}
+      
      </div>
     </div>
    </section>

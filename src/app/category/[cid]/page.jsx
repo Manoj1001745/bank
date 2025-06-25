@@ -18,9 +18,9 @@ function page() {
    
     <div className="container mx-auto">
      <h3 className="text-2xl font-bold py-2"> </h3> 
-   <div className="flex gap-4 flex-wrap">
+   <div className="box-22 flex gap-4 flex-wrap">
    {post.map(a=>(
- <div className='p-3 w-[30%] box-1'>
+ <div className='box-33 p-3 w-[30%] box-1'>
   <Link href={`/details/${a.id}`}>
     <img className='h-[250px] object-cover' src={a.featured_image_src} alt="" />
   <h1 className='pp-1 text-2xl text-red-600 font-bold py-3'>{a.title.rendered}</h1>
