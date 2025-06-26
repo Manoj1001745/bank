@@ -83,5 +83,13 @@ nav ul {
         justify-content: center;
         margin-top: 10px;
     }
+    .nav-a{
+        display: none;
+    }
 }
-
+@media(max-width:1275px){
+    .nav-b{
+        font-size: 15px;
+        display: flex;
+    }
+}
