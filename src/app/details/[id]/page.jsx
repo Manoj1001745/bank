@@ -7,12 +7,6 @@ import { useParams } from 'next/navigation';
 function page() {
     let {id}=useParams()
     let [posts, setPosts]=useState([])
-    // useEffect(()=>{
-    //     axios.get(`https://bankingkhabar.com/wp-json/wp/v2/posts/${id}`)
-    //     .then(res => {
-    //       setPosts(res.data);
-    //     });
-    // },[id])
 
     useEffect(() => {
       console.log("ID:", id);
@@ -30,9 +24,10 @@ function page() {
      <section className='py-5'>
        <div className="container mx-auto text-center border-2 p-4 item-center">
        <h2 className='font-bold text-3xl py-3'>{posts.yoast_head_json.title}</h2>
-      
-          <img className='w-full object-cover rounded-2xl py-4' src={posts.featured_image_src} alt="" />
-       <h3 dangerouslySetInnerHTML={{ __html: posts.content.rendered }}></h3>
+       <div 
+         className='text-left prose prose-lg max-w-none [&_img]:w-full [&_img]:rounded-2xl [&_img]:my-4 [&_p]:my-3' 
+         dangerouslySetInnerHTML={{ __html: posts.content.rendered }}
+       ></div>
        </div>
        </section>
      </>
