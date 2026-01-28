@@ -33,19 +33,22 @@ export default function Home() {
    {/* Breaking News Ticker */}
    {post.slice(0, 2).map((a, index) => (
      <section key={a.id} className='py-4 fade-in' style={{animationDelay: `${index * 0.1}s`}}>
-       <div className="container mx-auto text-center px-4">
+       <div className="container mx-auto px-2">
         <div className='bg-gradient-to-r from-red-700 via-red-600 to-red-700 rounded-t-xl shadow-lg'>
-          <div className="flex items-center">
-            <span className="bg-red-900 text-white px-4 py-3 font-bold text-sm uppercase tracking-wide">Breaking</span>
-            <marquee behavior="alternet" direction="left" className="flex-1">
-              <h1 className='text-xl md:text-2xl text-white font-bold py-2'>{a.title.rendered}</h1>
-            </marquee>
+          <div className="flex items-center overflow-hidden">
+            <span className="bg-red-900 rounded-t-xl text-white px-4 py-3 font-bold text-sm uppercase tracking-wide whitespace-nowrap flex-shrink-0">Breaking</span>
+            <div className="flex-1 overflow-hidden">
+              <marquee behavior="alternate" direction="left" scrollamount="5">
+                <h1 className='text-xl md:text-2xl text-white font-bold py-2'>{a.title.rendered}</h1>
+              </marquee>
+            </div>
           </div>
         </div>
-        <div className='featured-overlay overflow-hidden rounded-b-2xl shadow-xl'>
+        <div className='relative overflow-hidden rounded-b-2xl shadow-xl'>
           <img className='w-full object-cover max-h-[450px]' src={a.featured_image_src} alt={a.title.rendered} />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
           <div className="absolute inset-0 flex items-end justify-center z-10 p-6">
-            <Link href={`/details/${a.id}`} className="bg-white/95 backdrop-blur-sm text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-all shadow-lg">
+            <Link href={`/details/${a.id}`} className="bg-white/95 backdrop-blur-sm text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-all duration-300 shadow-lg transform hover:scale-105">
               Read Full Story →
             </Link>
           </div>
@@ -54,7 +57,7 @@ export default function Home() {
      </section>
    ))}
 
-   <section className='py-6'>
+   <section className='py-2'>
      <div className="container mx-auto px-4 flex justify-center">
        <div className='ad-banner'>
          <img className='w-full max-w-[500px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2025/02/800-x-200-gif%20new.gif" alt="Advertisement" />
@@ -63,7 +66,7 @@ export default function Home() {
    </section>
 
    {/* Featured Posts Grid */}
-   <section className="py-8">
+   <section className="py-2">
      <div className="container mx-auto px-4">
        <div className="grid md:grid-cols-3 gap-6">
          {post.slice(1, 4).map((a, index) => (
@@ -80,7 +83,7 @@ export default function Home() {
      </div>
    </section>
 
-   <section className='py-6'>
+   <section className='py-2'>
      <div className="container mx-auto px-4 flex justify-center">
        <div className='ad-banner'>
          <img className='w-full max-w-[850px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2019/03/prabhumoney.gif" alt="Advertisement" />
@@ -91,7 +94,7 @@ export default function Home() {
    <ProductByCat id={2} title="अन्तरवार्ता" />
    <ProductByCat id={71} title="अन्तर्राष्ट्रिय बैंकिङ" />
 
-   <section className='py-6'> 
+   <section className='py-2'> 
      <div className="container mx-auto px-4 flex justify-center">
        <div className='ad-banner'>
          <img className='w-full max-w-[900px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2025/02/900x150.gif" alt="Advertisement" />
@@ -101,7 +104,7 @@ export default function Home() {
 
    <ProductByCat id={89} title="अर्थ" />
 
-   <section className='py-6'>
+   <section className='py-2'>
      <div className="container mx-auto px-4">
        <div className='ad-banner'>
          <img className='w-full' src="https://bankingkhabar.com/wp-content/uploads/2024/09/1000-x-100.gif" alt="Advertisement" />
