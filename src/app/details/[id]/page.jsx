@@ -35,16 +35,16 @@ function page() {
    {posts && posts.yoast_head_json && posts.content ? (
      <>
      {/* Back Navigation */}
-     <div className="bg-white border-b sticky top-0 z-40">
+     {/* <div className="bg-white border-b sticky top-0 z-40">
        <div className="container mx-auto px-4 py-3">
          <Link href="/" className="inline-flex items-center gap-2 text-gray-600 hover:text-red-600 transition-colors">
            <FaArrowLeft />
            <span>Back to Home</span>
          </Link>
        </div>
-     </div>
+     </div> */}
 
-     <section className='py-8'>
+     <section className='py-4'>
        <div className="container mx-auto px-4">
          <article className='article-content bg-white rounded-2xl shadow-xl overflow-hidden fade-in'>
            {/* Article Header */}
@@ -110,10 +110,6 @@ function page() {
            {/* Article Footer */}
            <div className="p-6 md:p-10 bg-gray-50 border-t border-gray-100">
              <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-               <Link href="/" className="btn-primary inline-flex items-center gap-2">
-                 <FaArrowLeft />
-                 Back to Home
-               </Link>
                <div className="text-gray-500 text-sm">
                  Thank you for reading Banking Khabar
                </div>
