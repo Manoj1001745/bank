@@ -1,95 +1,133 @@
 @import "tailwindcss";
 
-img{
-    filter: brightness(80%) !important;
+img {
+  filter: brightness(80%) !important;
 }
 
-.nav-1:hover{
-    color: rgb(57, 55, 55);
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-
+.nav-1:hover {
+  color: rgb(57, 55, 55);
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
-.navbar{
-    position: fixed;
+.navbar {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
 }
 
-
-
-
-    .navbar li {
-      
-      color: white;
-      
-    }
-.pp-1:hover{
-    color: rgb(76, 39, 39);
-   transition: all 0.1s ease-in-out;
-    transform: scale(1.0);
+.navbar li {
+  color: white;
+}
+.pp-1:hover {
+  color: rgb(76, 39, 39);
+  transition: all 0.1s ease-in-out;
+  transform: scale(1);
 }
 
-.box-1{
-   box-sizing: border-box;
-   border-radius: 20px;
-    padding: 20px;
-   border: 1px solid #ccc;
+.box-1 {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
 @media (max-width: 768px) {
-     
-nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        border: 0;
-    }
-    header, footer {
-        font-size: 14px;
-    }
-.pp-1{
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    border: 0;
+  }
+  header,
+  footer {
+    font-size: 14px;
+  }
+  .pp-1 {
     transition: all 0.1s ease-in-out;
-    transform: scale(1.0);
+    transform: scale(1);
     font-size: 16px;
-}
-    
-    .box-11{
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        display: inline-block;
-        margin-top: 10px;
-    }
+  }
 
-    .box-22{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px;
-        
-        display: inline-block;
-       
-        margin-top: 10px;
-    }
-    .box-33{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px;
-        
-        display: inline-block;
-       align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .nav-a{
-        display: none;
-    }
+  .box-11 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .box-22 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+
+    display: inline-block;
+
+    margin-top: 10px;
+  }
+  .box-33 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .nav-a {
+    display: none;
+  }
 }
-@media(max-width:1275px){
-    .nav-b{
-        font-size: 15px;
-        display: flex;
-    }
+@media (max-width: 1275px) {
+  .nav-b {
+    font-size: 15px;
+    display: flex;
+  }
+}
+
+/* Featured Overlay - remove if already defined and replace with this */
+.featured-overlay {
+  position: relative;
+}
+
+.featured-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Fade in animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ad banner styling */
+.ad-banner {
+  transition: transform 0.3s ease;
+}
+
+.ad-banner:hover {
+  transform: scale(1.02);
 }
