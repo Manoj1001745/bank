@@ -20,9 +20,15 @@ export default function Header() {
       {/* Top Bar */}
       <section className="text-gray-200 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-          <h1 className="text-lg font-semibold tracking-wide">English</h1>
+          {/* <h1 className="text-lg font-semibold tracking-wide">English</h1> */}
+                    <Link href="/" className="hover-lift">
+            <img
+              className="w-[60px]"
+              src="https://news.colglobal.org/img/logo.png"
+              alt="colglobal Logo"
+            />
+          </Link>
           <div className="flex gap-6 text-sm">
-            <Link href="/login" className="hover:text-red-400 transition-colors duration-200">Login</Link>
             <Link href="/about" className="hover:text-red-400 transition-colors duration-200">About</Link>
             <Link href="/contact" className="hover:text-red-400 transition-colors duration-200">Contact</Link>
           </div>
@@ -30,13 +36,13 @@ export default function Header() {
       </section>
 
       {/* Logo */}
-      <header className="py-4 bg-white shadow-sm">
+      {/* <header className="py-4 bg-white shadow-sm">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center gap-4">
           <Link href="/" className="hover-lift">
             <img
-              className="w-[260px]"
-              src="https://bankingkhabar.com/wp-content/uploads/2022/11/banking-logo.jpg"
-              alt="Banking Khabar Logo"
+              className="w-[100px]"
+              src="https://news.colglobal.org/img/logo.png"
+              alt="colglobal Logo"
             />
           </Link>
           <Link href="/" className="hidden md:block">
@@ -47,7 +53,7 @@ export default function Header() {
             />
           </Link>
         </div>
-      </header>
+      </header> */}
 
       {/* Navbar */}
       <nav className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white sticky top-0 z-50 shadow-lg">

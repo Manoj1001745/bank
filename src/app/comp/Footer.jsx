@@ -18,23 +18,30 @@ function Footer() {
     { name: 'Contact', href: '/contact' },
     { name: 'Privacy Policy', href: '/privacy' },
   ];
+    const categories = [
+    { name: 'Health', href: '' },
+    { name: 'Politics', href: '' },
+    { name: 'Sports', href: '' },
+    { name: 'Culture & Lifestyle ', href: '' },
+  ];
+
 
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/">
               <img 
-                className='w-[250px] rounded-lg mb-4 hover:opacity-90 transition-opacity' 
-                src="https://bankingkhabar.com/wp-content/uploads/2022/08/logo1-1.jpg" 
-                alt="Banking Khabar Logo" 
+                className='w-[100px] rounded-lg mb-4 hover:opacity-90 transition-opacity' 
+                src="https://news.colglobal.org/img/logo.png" 
+                alt="colglobal Logo" 
               />
             </Link>
             <p className='text-gray-400 mb-4 leading-relaxed max-w-md'>
-              Nepal's leading source for banking, finance, and economic news. Delivering accurate and timely news since 2015.
+              Stay informed with the latest news and updates from around the world. Our mission is to deliver accurate, unbiased reporting that keeps you connected to the events shaping our world. We value your trust and are committed to bringing you the news that matters.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
@@ -71,6 +78,26 @@ function Footer() {
               ))}
             </ul>
           </div>
+                    {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-bold mb-4 text-white relative inline-block">
+              Categories
+              <span className="absolute -bottom-1 left-0 w-12 h-0.5 bg-red-600"></span>
+            </h4>
+            <ul className="space-y-2">
+              {categories.map((link, index) => (
+                <li key={index}>
+                  <Link 
+                    href={link.href} 
+                    className="text-gray-400 hover:text-red-500 transition-colors flex items-center gap-2"
+                  >
+                    <span className="text-red-600">›</span>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Contact Info */}
           <div>
@@ -89,8 +116,8 @@ function Footer() {
               <li className="flex items-start gap-3 text-gray-400">
                 <FaEnvelope className="text-red-500 mt-1 flex-shrink-0" />
                 <div>
-                  <p>bankingkhabar72@gmail.com</p>
-                  <p className="text-sm">(Advertisement: bankingkhabaradv@gmail.com)</p>
+                  <p>colglobal@gmail.com</p>
+                  <p className="text-sm">(Advertisement: info@colnewsgmail.com)</p>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
@@ -124,7 +151,7 @@ function Footer() {
       <div className="bg-black py-4">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} Banking Khabar. All Rights Reserved. | 
+            © {currentYear} colglobal news. All Rights Reserved. | 
             <Link href="/privacy" className="hover:text-red-500 transition-colors ml-1">Privacy Policy</Link> | 
             <Link href="/terms" className="hover:text-red-500 transition-colors ml-1">Terms of Service</Link>
           </p>

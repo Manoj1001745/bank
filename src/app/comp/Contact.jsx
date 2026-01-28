@@ -8,7 +8,6 @@ import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
-  FaLinkedinIn,
   FaYoutube,
   FaPaperPlane,
   FaNewspaper,
@@ -40,36 +39,35 @@ function Contact() {
 
   const contactInfo = [
     {
-      icon: <FaPhone className="text-xl" />,
+      icon: <FaPhone className="text-lg sm:text-xl" />,
       title: "Phone",
-      details: ["+977-01-4567890", "+977-9841234567"],
-      color: "bg-green-500",
+      details: ["+977 980-234-8005"],
+      color: "bg-gradient-to-br from-emerald-500 to-green-600",
     },
     {
-      icon: <FaEnvelope className="text-xl" />,
+      icon: <FaEnvelope className="text-lg sm:text-xl" />,
       title: "Email",
-      details: ["info@bankingkhabar.com", "news@bankingkhabar.com"],
-      color: "bg-blue-500",
+      details: ["info@colglobal.org", "news@colglobal.org"],
+      color: "bg-gradient-to-br from-blue-500 to-blue-600",
     },
     {
-      icon: <FaMapMarkerAlt className="text-xl" />,
+      icon: <FaMapMarkerAlt className="text-lg sm:text-xl" />,
       title: "Address",
-      details: ["Kathmandu, Nepal", "New Baneshwor"],
-      color: "bg-red-500",
+      details: ["Pepsi cola", "Kathmandu, Nepal"],
+      color: "bg-gradient-to-br from-red-500 to-red-600",
     },
     {
-      icon: <FaClock className="text-xl" />,
+      icon: <FaClock className="text-lg sm:text-xl" />,
       title: "Working Hours",
       details: ["Sun - Fri: 9:00 AM - 6:00 PM", "Sat: Closed"],
-      color: "bg-purple-500",
+      color: "bg-gradient-to-br from-purple-500 to-indigo-600",
     },
   ];
 
   const socialLinks = [
-    { icon: <FaFacebookF />, url: "#", name: "Facebook", color: "hover:bg-blue-600" },
+    { icon: <FaFacebookF />, url: "https://www.facebook.com/profile.php?id=61564920835213", name: "Facebook", color: "hover:bg-blue-600" },
     { icon: <FaTwitter />, url: "#", name: "Twitter", color: "hover:bg-sky-500" },
-    { icon: <FaInstagram />, url: "#", name: "Instagram", color: "hover:bg-pink-500" },
-    { icon: <FaLinkedinIn />, url: "#", name: "LinkedIn", color: "hover:bg-blue-700" },
+    { icon: <FaInstagram />, url: "https://www.instagram.com/col.global1/", name: "Instagram", color: "hover:bg-pink-500" },
     { icon: <FaYoutube />, url: "#", name: "YouTube", color: "hover:bg-red-600" },
   ];
 
@@ -121,45 +119,61 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a] py-16 md:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 sm:py-20 lg:py-24 overflow-hidden">
+        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-red-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
         </div>
-        <div className="container mx-auto px-4 relative z-10">
+        
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-orange-500/20"></div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="inline-block px-4 py-2 bg-red-500/20 text-red-400 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
-              Get In Touch With Us
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Contact <span className="text-red-500">Banking Khabar</span>
+            {/* Brand Badge */}
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+              <span className="text-red-400 font-bold">COL</span>
+              <span className="text-white font-semibold">Global News</span>
+            </div>
+            
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+              Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">Col Global News</span>
             </h1>
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+            <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed px-4">
               Have a news tip, story idea, or just want to reach out? We're here to listen.
-              Your voice matters to us and helps shape the stories that matter to Nepal.
+              Your voice matters to us and helps shape the stories that matter to Nepal and the world.
             </p>
           </div>
+        </div>
+        
+        {/* Wave Bottom */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
+            <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F9FAFB"/>
+          </svg>
         </div>
       </section>
 
       {/* Contact Info Cards */}
-      <section className="container mx-auto px-4 -mt-10 relative z-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-10 relative z-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
           {contactInfo.map((info, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 group hover:-translate-y-2"
+              className="bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-4 sm:p-6 group hover:-translate-y-1"
             >
               <div
-                className={`w-14 h-14 ${info.color} rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300`}
+                className={`w-10 h-10 sm:w-14 sm:h-14 ${info.color} rounded-lg sm:rounded-xl flex items-center justify-center text-white mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
               >
                 {info.icon}
               </div>
-              <h3 className="font-bold text-gray-800 text-lg mb-2">{info.title}</h3>
+              <h3 className="font-bold text-gray-800 text-sm sm:text-lg mb-1 sm:mb-2">{info.title}</h3>
               {info.details.map((detail, idx) => (
-                <p key={idx} className="text-gray-600 text-sm leading-relaxed">
+                <p key={idx} className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                   {detail}
                 </p>
               ))}
@@ -169,40 +183,41 @@ function Contact() {
       </section>
 
       {/* Main Content */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div className="grid lg:grid-cols-5 gap-6 lg:gap-10">
           {/* Contact Form */}
           <div className="lg:col-span-3">
-            <div className="bg-white rounded-3xl shadow-xl p-6 md:p-10">
-              <div className="mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-5 sm:p-8 lg:p-10">
+              <div className="mb-6 sm:mb-8">
+                <span className="inline-block text-red-500 font-semibold text-sm uppercase tracking-wider mb-2">Get In Touch</span>
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-2 sm:mb-3">
                   Send Us a Message
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm sm:text-base">
                   Fill out the form below and we'll get back to you as soon as possible.
                 </p>
               </div>
 
               {isSubmitted ? (
-                <div className="text-center py-16">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6 animate-bounce">
-                    <IoCheckmarkCircle className="text-5xl text-green-500" />
+                <div className="text-center py-12 sm:py-16">
+                  <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-green-100 rounded-full mb-4 sm:mb-6 animate-bounce">
+                    <IoCheckmarkCircle className="text-4xl sm:text-5xl text-green-500" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">
                     Message Sent Successfully!
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     Thank you for reaching out. We'll respond within 24-48 hours.
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                   {/* Inquiry Type Selection */}
                   <div>
-                    <label className="block text-gray-700 font-semibold mb-3">
+                    <label className="block text-gray-700 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">
                       What can we help you with? *
                     </label>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3">
                       {inquiryTypes.map((type) => (
                         <button
                           key={type.value}
@@ -213,26 +228,26 @@ function Contact() {
                               setErrors((prev) => ({ ...prev, inquiryType: "" }));
                             }
                           }}
-                          className={`p-4 rounded-xl border-2 text-center transition-all duration-300 ${
+                          className={`p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 text-center transition-all duration-300 ${
                             formData.inquiryType === type.value
                               ? "border-red-500 bg-red-50 text-red-600"
                               : "border-gray-200 hover:border-gray-300 text-gray-600"
                           }`}
                         >
-                          <span className="text-2xl mb-2 block">{type.icon}</span>
-                          <span className="text-xs font-medium">{type.label}</span>
+                          <span className="text-xl sm:text-2xl mb-1 sm:mb-2 block">{type.icon}</span>
+                          <span className="text-[10px] sm:text-xs font-medium leading-tight block">{type.label}</span>
                         </button>
                       ))}
                     </div>
                     {errors.inquiryType && (
-                      <p className="text-red-500 text-sm mt-2">{errors.inquiryType}</p>
+                      <p className="text-red-500 text-xs sm:text-sm mt-2">{errors.inquiryType}</p>
                     )}
                   </div>
 
                   {/* Name & Email */}
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label className="block text-gray-700 font-semibold mb-2">
+                      <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">
                         Full Name <span className="text-red-600">*</span>
                       </label>
                       <input
@@ -241,18 +256,18 @@ function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Enter your full name"
-                        className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none transition-all duration-300 ${
+                        className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border-2 focus:outline-none transition-all duration-300 text-sm sm:text-base ${
                           errors.name
                             ? "border-red-500 focus:border-red-500"
                             : "border-gray-200 focus:border-red-500"
                         }`}
                       />
                       {errors.name && (
-                        <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                        <p className="text-red-500 text-xs sm:text-sm mt-1">{errors.name}</p>
                       )}
                     </div>
                     <div>
-                      <label className="block text-gray-700 font-semibold mb-2">
+                      <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">
                         Email Address <span className="text-red-600">*</span>
                       </label>
                       <input
@@ -261,23 +276,23 @@ function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="Enter your email"
-                        className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none transition-all duration-300 ${
+                        className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border-2 focus:outline-none transition-all duration-300 text-sm sm:text-base ${
                           errors.email
                             ? "border-red-500 focus:border-red-500"
                             : "border-gray-200 focus:border-red-500"
                         }`}
                       />
                       {errors.email && (
-                        <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                        <p className="text-red-500 text-xs sm:text-sm mt-1">{errors.email}</p>
                       )}
                     </div>
                   </div>
 
                   {/* Phone & Subject */}
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label className="block text-gray-700 font-semibold mb-2">
-                        Phone Number <span className="text-red-600">*</span>
+                      <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">
+                        Phone Number
                       </label>
                       <input
                         type="tel"
@@ -285,11 +300,11 @@ function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="Enter your phone number"
-                        className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-red-500 focus:outline-none transition-all duration-300"
+                        className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border-2 border-gray-200 focus:border-red-500 focus:outline-none transition-all duration-300 text-sm sm:text-base"
                       />
                     </div>
                     <div>
-                      <label className="block text-gray-700 font-semibold mb-2">
+                      <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">
                         Subject <span className="text-red-600">*</span>
                       </label>
                       <input
@@ -298,37 +313,37 @@ function Contact() {
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder="What's this about?"
-                        className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none transition-all duration-300 ${
+                        className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border-2 focus:outline-none transition-all duration-300 text-sm sm:text-base ${
                           errors.subject
                             ? "border-red-500 focus:border-red-500"
                             : "border-gray-200 focus:border-red-500"
                         }`}
                       />
                       {errors.subject && (
-                        <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
+                        <p className="text-red-500 text-xs sm:text-sm mt-1">{errors.subject}</p>
                       )}
                     </div>
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label className="block text-gray-700 font-semibold mb-2">
-                      Your Message 
+                    <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">
+                      Your Message <span className="text-red-600">*</span>
                     </label>
                     <textarea
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Tell us more about your inquiry..."
-                      rows="5"
-                      className={`w-full px-4 py-3 rounded-xl border-2 focus:outline-none transition-all duration-300 resize-none ${
+                      rows="4"
+                      className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border-2 focus:outline-none transition-all duration-300 resize-none text-sm sm:text-base ${
                         errors.message
                           ? "border-red-500 focus:border-red-500"
                           : "border-gray-200 focus:border-red-500"
                       }`}
                     ></textarea>
                     {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                      <p className="text-red-500 text-xs sm:text-sm mt-1">{errors.message}</p>
                     )}
                   </div>
 
@@ -336,12 +351,12 @@ function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full md:w-auto px-10 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-xl hover:from-red-600 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed shadow-lg hover:shadow-xl hover:-translate-y-1"
+                    className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-xl hover:from-red-600 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 disabled:opacity-70 disabled:cursor-not-allowed shadow-lg hover:shadow-xl hover:-translate-y-1 text-sm sm:text-base"
                   >
                     {isSubmitting ? (
                       <>
                         <svg
-                          className="animate-spin h-5 w-5"
+                          className="animate-spin h-4 w-4 sm:h-5 sm:w-5"
                           viewBox="0 0 24 24"
                         >
                           <circle
@@ -379,7 +394,7 @@ function Contact() {
             <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] rounded-3xl p-6 md:p-8 text-white">
               <h3 className="text-xl font-bold mb-4">Quick Contact</h3>
               <p className="text-gray-300 mb-6 text-sm leading-relaxed">
-                For urgent news tips or breaking stories, reach us directly through our hotline.
+                For urgent news tips or politics, cultural & Lifestyle news, reach us directly through our hotline.
               </p>
               <a
                 href="tel:+9779841234567"
@@ -414,7 +429,7 @@ function Contact() {
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-6 md:p-8 text-white">
               <h3 className="text-xl font-bold mb-3">Subscribe to Newsletter</h3>
               <p className="text-blue-100 mb-6 text-sm leading-relaxed">
-                Get the latest banking and financial news delivered to your inbox.
+                Get the latest sport, politics, cultural & Lifestyle news delivered to your inbox.
               </p>
               <div className="flex gap-2">
                 <input
@@ -439,7 +454,7 @@ function Contact() {
                     How can I submit a news tip?
                   </h4>
                   <p className="text-gray-600 text-xs">
-                    Select "News Tip" above or email news@bankingkhabar.com
+                    Select "News Tip" above or email news@colgmail.com
                   </p>
                 </div>
                 <div className="p-4 bg-gray-50 rounded-xl">
@@ -477,14 +492,14 @@ function Contact() {
           </div>
           <div className="rounded-3xl overflow-hidden shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8476814877177!2d85.3389534!3d27.6933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b5c5e8a5f7%3A0x5d8a2e4d3b0f3a43!2sNew%20Baneshwor%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5!2d85.349!3d27.6815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f8e1234567%3A0xabcdef123456!2sPepsicola%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1706450000000!5m2!1sen!2snp"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Banking Khabar Office Location"
+              title="Col Global News Office - Pepsicola, Kathmandu"
               className="grayscale hover:grayscale-0 transition-all duration-500"
             ></iframe>
           </div>
