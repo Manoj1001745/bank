@@ -61,25 +61,25 @@ function About() {
 
   const team = [
     {
-      name: "Rajesh Sharma",
+      name: "Manoj Khadka",
       role: "Editor-in-Chief",
       image: "https://randomuser.me/api/portraits/men/32.jpg",
       description: "20+ years of experience in journalism",
     },
     {
-      name: "Sita Thapa",
+      name: "Sagar ",
       role: "Managing Editor",
       image: "https://randomuser.me/api/portraits/women/44.jpg",
       description: "Expert in news analysis & reporting",
     },
     {
-      name: "Anil Poudel",
+      name: "Kshitiz Poudel",
       role: "Senior Reporter",
       image: "https://randomuser.me/api/portraits/men/67.jpg",
       description: "Specializes in politics & sports",
     },
     {
-      name: "Priya Maharjan",
+      name: "saurav Maharjan",
       role: "Digital Editor",
       image: "https://randomuser.me/api/portraits/women/68.jpg",
       description: "Leading our digital transformation",
