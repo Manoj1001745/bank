@@ -1,19 +1,12 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
+import data from "@/data/data.json";
 
 export default function Header() {
-  const [cat, setCat] = useState([]);
+  const cat = data.categories;
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // Fetch categories from WordPress
-  useEffect(() => {
-    axios
-      .get("https://bankingkhabar.com/wp-json/wp/v2/categories")
-      .then((res) => setCat(res.data));
-  }, []);
 
   return (
     <>
@@ -35,25 +28,7 @@ export default function Header() {
         </div>
       </section>
 
-      {/* Logo */}
-      {/* <header className="py-4 bg-white shadow-sm">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center gap-4">
-          <Link href="/" className="hover-lift">
-            <img
-              className="w-[100px]"
-              src="https://news.colglobal.org/img/logo.png"
-              alt="colglobal Logo"
-            />
-          </Link>
-          <Link href="/" className="hidden md:block">
-            <img
-              className="max-w-[700px] w-full rounded-lg shadow-md hover:shadow-lg transition-shadow"
-              src="https://bankingkhabar.com/wp-content/uploads/2025/03/1000-by-100-new.gif"
-              alt="Advertisement"
-            />
-          </Link>
-        </div>
-      </header> */}
+
 
       {/* Navbar */}
       <nav className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white sticky top-0 z-50 shadow-lg">
