@@ -23,6 +23,10 @@ function Footer() {
     { name: 'Politics', href: '' },
     { name: 'Sports', href: '' },
     { name: 'Culture & Lifestyle ', href: '' },
+    { name: 'Technology', href: '' },
+    { name: 'Entertainment', href: '' },
+    { name: 'Business', href: '' },
+    { name: 'Education', href: '' },
   ];
 
 
@@ -133,11 +137,11 @@ function Footer() {
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div className="bg-gray-800/50 px-6 py-4 rounded-lg">
               <p className="text-gray-400 text-sm">Chief Editor</p>
-              <p className="text-white font-semibold">Madhav Nirdosh</p>
+              <p className="text-white font-semibold">Manoj Khadka</p>
             </div>
             <div className="bg-gray-800/50 px-6 py-4 rounded-lg">
               <p className="text-gray-400 text-sm">Coordinator</p>
-              <p className="text-white font-semibold">Sandip B. K</p>
+              <p className="text-white font-semibold">Kshitiz paudel</p>
             </div>
             <div className="bg-gray-800/50 px-6 py-4 rounded-lg">
               <p className="text-gray-400 text-sm">Registration No.</p>
@@ -148,7 +152,7 @@ function Footer() {
       </div>
 
       {/* Copyright Bar */}
-      <div className="bg-black py-4">
+      <div className="bg-black py-2">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-500 text-sm">
             © {currentYear} colglobal news. All Rights Reserved. | 
