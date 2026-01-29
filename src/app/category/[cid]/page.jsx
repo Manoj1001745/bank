@@ -34,7 +34,7 @@ function Page() {
                                     <img className='h-[220px] w-full object-cover' src={a.featured_image_src} alt={a.title?.rendered || 'Post image'} />
                                     <div className="p-4">
                                         <h2 className='text-xl text-gray-800 font-bold line-clamp-2 group-hover:text-red-600 transition-colors'>{a.title?.rendered}</h2>
-                                        <p className='text-sm text-gray-500 mt-2'>{new Date(a.date).toLocaleDateString('ne-NP')}</p>
+                                        {/* <p className='text-sm text-gray-500 mt-2'>{new Date(a.date).toLocaleDateString('ne-NP')}</p> */}
                                     </div>
                                 </Link>
                             </div>
