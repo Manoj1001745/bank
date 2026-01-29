@@ -1,32 +1,12 @@
 "use client"
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import axios from "axios";
-import ProductByCat from './comp/ProductByCat';
+import React from 'react'
+import ProductByCat from './comp/ProductByCategory';
 import './globals.css';
+import data from '@/data/data.json';
 
 export default function Home() {
-  let [post, setPost] = useState([]);
-  let [loading, setLoading] = useState(true);
-  
-  useEffect(() => {
-    axios.get(`https://bankingkhabar.com/wp-json/wp/v2/posts`)
-    .then(res => {
-      setPost(res.data);
-      setLoading(false);
-    });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <div className="w-16 h-16 border-4 border-red-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600 text-lg">Loading news...</p>
-        </div>
-      </div>
-    );
-  }
+  const post = data.posts;
 
   return (
    <div className="min-h-screen bg-gray-50">
@@ -57,16 +37,16 @@ export default function Home() {
      </section>
    ))}
 
-   <section className='py-2'>
+   <section className='py-4'>
      <div className="container mx-auto px-4 flex justify-center">
        <div className='ad-banner'>
-         <img className='w-full max-w-[500px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2025/02/800-x-200-gif%20new.gif" alt="Advertisement" />
+         <img className='w-full max-w-[400px] mx-auto' src="https://news.colglobal.org/img/logo.png" alt="COL Global News" />
        </div>
      </div>
    </section>
 
    {/* Featured Posts Grid */}
-   <section className="py-2">
+   <section className="">
      <div className="container mx-auto px-4">
        <div className="grid md:grid-cols-3 gap-6">
          {post.slice(1, 4).map((a, index) => (
@@ -83,36 +63,22 @@ export default function Home() {
      </div>
    </section>
 
-   <section className='py-2'>
-     <div className="container mx-auto px-4 flex justify-center">
-       <div className='ad-banner'>
-         <img className='w-full max-w-[850px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2019/03/prabhumoney.gif" alt="Advertisement" />
-       </div>
-     </div>
-   </section>
 
-   <ProductByCat id={2} title="अन्तरवार्ता" />
-   <ProductByCat id={71} title="अन्तर्राष्ट्रिय बैंकिङ" />
+   <ProductByCat id={3} title="Sports" />
+
+
+   <ProductByCat id={1} title="Health" />
 
    <section className='py-2'> 
      <div className="container mx-auto px-4 flex justify-center">
        <div className='ad-banner'>
-         <img className='w-full max-w-[900px] mx-auto' src="https://bankingkhabar.com/wp-content/uploads/2025/02/900x150.gif" alt="Advertisement" />
+         <img className='w-full max-w-[300px] mx-auto' src="https://news.colglobal.org/img/col.png" alt="COL Global" />
        </div>
      </div>
    </section>
 
-   <ProductByCat id={89} title="अर्थ" />
-
-   <section className='py-2'>
-     <div className="container mx-auto px-4">
-       <div className='ad-banner'>
-         <img className='w-full' src="https://bankingkhabar.com/wp-content/uploads/2024/09/1000-x-100.gif" alt="Advertisement" />
-       </div>
-     </div>
-   </section>
-   
-   <ProductByCat id={86} title="कोरोना अपडेट" />
+   <ProductByCat id={2} title="Politics" />
+   <ProductByCat id={4} title="Culture & Lifestyle" />
    </div>
   );
 }
