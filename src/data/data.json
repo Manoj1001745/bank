@@ -27,31 +27,31 @@
         {
       "id": 5,
       "name": "Entertainment",
-      "slug": "culture-lifestyle",
-      "description": "Culture, lifestyle and entertainment news"
+      "slug": "Entertainment",
+      "description": "Entertainment, lifestyle and entertainment news"
     },
         {
       "id": 6,
       "name": "Business",
-      "slug": "culture-lifestyle",
-      "description": "Culture, lifestyle and entertainment news"
+      "slug": "Business",
+      "description": "Business, lifestyle and entertainment news"
     },
         {
       "id": 7,
       "name": "Finance",
-      "slug": "culture-lifestyle",
-      "description": "Culture, lifestyle and entertainment news"
+      "slug": "Finance",
+      "description": "Finance, lifestyle and entertainment news"
     },
         {
       "id": 8,
       "name": "Technology",
-      "slug": "culture-lifestyle",
+      "slug": "technology",
       "description": "Culture, lifestyle and entertainment news"
     },
         {
       "id": 9,
       "name": "Education",
-      "slug": "culture-lifestyle",
+      "slug": "education",
       "description": "Culture, lifestyle and entertainment news"
     }
 
@@ -197,6 +197,132 @@
       "date": "2024-10-05T10:00:00",
       "featured_image_src": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop",
       "categories": [1],
+      "yoast_head_json": {
+        "title": "Dengue surge sparks critical blood shortage - COL Global News"
+      }
+    },
+      {
+      "id": 14,
+      "title": {
+        "rendered": "Dengue surge sparks critical blood shortage"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://assets-cdn-api.ekantipur.com/thumb.php?src=https://assets-cdn.ekantipur.com/uploads/source/news/kantipur/2026/miscellaneous/ncp-press-meet-0821015-rkm-west2-2912026092832-1000x0.jpg&w=401&h=0",
+      "categories": [2],
+      "yoast_head_json": {
+        "title": "Dengue surge sparks critical blood shortage - COL Global News"
+      }
+    },
+      {
+      "id": 15,
+      "title": {
+        "rendered": "Dengue surge sparks critical blood shortage"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop",
+      "categories": [1],
+      "yoast_head_json": {
+        "title": "Dengue surge sparks critical blood shortage - COL Global News"
+      }
+    },
+      {
+      "id": 13,
+      "title": {
+        "rendered": "Dengue surge sparks critical blood shortage"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop",
+      "categories": [9],
+      "yoast_head_json": {
+        "title": "Dengue surge sparks critical blood shortage - COL Global News"
+      }
+    },
+      {
+      "id": 12,
+      "title": {
+        "rendered": "Dengue surge sparks critical blood shortage"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop",
+      "categories": [8],
+      "yoast_head_json": {
+        "title": "Dengue surge sparks critical blood shortage - COL Global News"
+      }
+    },
+        {
+      "id": 9,
+      "title": {
+        "rendered": "‘बुकी’को गीतमा देबेन्द्र र रोशनीको जोडी"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://assets-cdn-api.ekantipur.com/thumb.php?src=https://assets-cdn.ekantipur.com/uploads/source/news/kantipur/2026/third-party/screenshot-2026-01-27-152452-2812026123100-1000x0.png&w=301&h=0",
+      "categories": [5],
+      "yoast_head_json": {
+        "title": "‘बुकी’को गीतमा देबेन्द्र र रोशनीको जोडी"
+      }
+    },
+        {
+      "id": 10,
+      "title": {
+        "rendered": "Dengue surge sparks critical blood shortage"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop",
+      "categories": [6],
+      "yoast_head_json": {
+        "title": "Dengue surge sparks critical blood shortage - COL Global News"
+      }
+    },
+        {
+      "id": 11,
+      "title": {
+        "rendered": "Dengue surge sparks critical blood shortage"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop",
+      "categories": [7],
       "yoast_head_json": {
         "title": "Dengue surge sparks critical blood shortage - COL Global News"
       }
