@@ -24,6 +24,8 @@ export default function Header() {
           <div className="flex gap-6 text-sm">
             <Link href="/about" className="hover:text-red-400 transition-colors duration-200">About</Link>
             <Link href="/contact" className="hover:text-red-400 transition-colors duration-200">Contact</Link>
+            <Link href="/privacy" className="hover:text-red-400 transition-colors duration-200">Privacy Policy</Link>
+            <Link href="/blogs" className="hover:text-red-400 transition-colors duration-200">Blogs</Link>
           </div>
         </div>
       </section>
