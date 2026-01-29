@@ -1,0 +1,226 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Health",
+      "slug": "health",
+      "description": "Health news and medical updates"
+    },
+    {
+      "id": 2,
+      "name": "Politics",
+      "slug": "politics",
+      "description": "Political news and government updates"
+    },
+    {
+      "id": 3,
+      "name": "Sports",
+      "slug": "sports",
+      "description": "Sports news and updates"
+    },
+    {
+      "id": 4,
+      "name": "Culture & Lifestyle",
+      "slug": "culture-lifestyle",
+      "description": "Culture, lifestyle and entertainment news"
+    },
+        {
+      "id": 5,
+      "name": "Entertainment",
+      "slug": "culture-lifestyle",
+      "description": "Culture, lifestyle and entertainment news"
+    },
+        {
+      "id": 6,
+      "name": "Business",
+      "slug": "culture-lifestyle",
+      "description": "Culture, lifestyle and entertainment news"
+    },
+        {
+      "id": 7,
+      "name": "Finance",
+      "slug": "culture-lifestyle",
+      "description": "Culture, lifestyle and entertainment news"
+    },
+        {
+      "id": 8,
+      "name": "Technology",
+      "slug": "culture-lifestyle",
+      "description": "Culture, lifestyle and entertainment news"
+    },
+        {
+      "id": 9,
+      "name": "Education",
+      "slug": "culture-lifestyle",
+      "description": "Culture, lifestyle and entertainment news"
+    }
+
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": {
+        "rendered": "Karnali continue winning run, third victory for Kathmandu"
+      },
+      "content": {
+        "rendered": "<p>Karnali Yashvis continued their winning run in the Everest Women's Volleyball League as they defeated Chitwan Shakti 3-2 in a thrilling battle at the National Sports Council's covered hall in Kathmandu on Thursday.</p><img src='https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=800&h=400&fit=crop' alt='Volleyball'/><p>Karnali came from behind twice and took the fifth and deciding set for a 20-25, 25-18, 21-25, 25-15, 15-13 victory that also helped them maintain a perfect start in the league.</p><p>The win gave Karnali a fourth victory in as many matches and they are the only team to taste a defeat. The victory put them firmly in position to reach the final as they have 10 points and lead the standings.</p><p>The top two teams at the end of the single robin league will progress into the final, which is scheduled for Saturday.</p><p>Kathmandu Spikers are in the second spot after they pulled off their third straight victory with a 3-1 win over Madhesh United. The victory also cemented Kathmandu's bid for the final. They have nine points from four matches.</p>"
+      },
+      "excerpt": {
+        "rendered": "Karnali Yashvis continued their winning run in the Everest Women's Volleyball League..."
+      },
+      "date": "2024-10-04T10:30:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=800&h=400&fit=crop",
+      "categories": [3],
+      "yoast_head_json": {
+        "title": "Karnali continue winning run, third victory for Kathmandu - COL Global News"
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "rendered": "What I Watch Online: Ashra Kunwar"
+      },
+      "content": {
+        "rendered": "<p>I prefer this channel because Rick discusses music theory and songwriting, breaking down iconic rock songs. His 'What Makes This Song Great?' series helps me better understand the nuances of classic hits.</p><img src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=400&fit=crop' alt='Music'/><p><strong>The Charismatic Voice</strong> - I follow this channel because Elizabeth Zharoff's vocal analysis of rock and metal singers inspires me to refine my vocal technique. Her insights into powerful performances are invaluable for me as a musician.</p><p><strong>Andertons Music Co</strong> - I prefer Andertons because their gear reviews and guitar demos keep me updated on the latest types of equipment. I also enjoy their interviews with rock legends, which gives me a better sense of the tools behind music.</p><p><strong>JustinGuitar</strong> - I like JustinGuitar because the lessons are clear and easy to follow, especially when learning rock riffs and guitar techniques. It's a great way to refine my music skills at my own pace.</p><p><strong>Premier Guitar</strong> - I prefer Premier Guitar for its 'Rig Rundown' series, which shows the gear setups of famous rock musicians. This provides ideas on how to craft my sound and helps me understand the creative processes behind music.</p>"
+      },
+      "excerpt": {
+        "rendered": "I prefer this channel because Rick discusses music theory and songwriting..."
+      },
+      "date": "2024-10-04T09:15:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=400&fit=crop",
+      "categories": [4],
+      "yoast_head_json": {
+        "title": "What I Watch Online: Ashra Kunwar - COL Global News"
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "rendered": "Women's team save Nepal's blushes"
+      },
+      "content": {
+        "rendered": "<p>Nepal women's team ended the Day 1 of the Asia Rugby Sevens Trophy with a victory at the Dasharath Stadium in Kathmandu after the hosts' men's team suffered defeats in both their matches.</p><img src='https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=400&fit=crop' alt='Rugby'/><p>Nepal women had lost their first match 32-0 against the Philippines and faced a 17-5 defeat against Guam in their second Group E game of women's pool but bounced back to see off Uzbekistan 12-7.</p><p>Nepal's men's team, who are in Group B, lost their matches 24-0 against Uzbekistan and 27-7 against Bahrain.</p><p>The Asia Rugby's biggest tournament, which features 14 men's teams and eight women's teams from all five sub-regions of Asia, will conclude on Saturday.</p><p>The men's teams include Afghanistan, Bahrain, Bangladesh, Chinese Taipei, India, Jordan, Kazakhstan, Nepal, Pakistan, the Philippines, Qatar, Saudi Arabia, Sri Lanka, and Uzbekistan. The women's teams are Guam, India, Indonesia, Iran, Nepal, the Philippines, Sri Lanka, and Uzbekistan.</p>"
+      },
+      "excerpt": {
+        "rendered": "Nepal women's team ended the Day 1 of the Asia Rugby Sevens Trophy with a victory..."
+      },
+      "date": "2024-10-05T14:20:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=400&fit=crop",
+      "categories": [3],
+      "yoast_head_json": {
+        "title": "Women's team save Nepal's blushes - COL Global News"
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "rendered": "Ranjitkar community reviving lost Lakhe dance after a century"
+      },
+      "content": {
+        "rendered": "<p>The rhythmic beat of the Dha echoes through a Bhaktapur alley, blending with the energetic footsteps of dancers. Bhaktapur, which sees jatras and festivals round the year, is no stranger to music, dance and celebrations. But this is not an ordinary occasion.</p><img src='https://images.unsplash.com/photo-1545959570-a94084071b5d?w=800&h=400&fit=crop' alt='Lakhe Dance'/><p>The performers in question are Lakhe dancers who are reviving the Ranjitkar Lakhe dance after a century. The young dancers are preparing for Indra Jatra this year, where mask-clad Lakhe dancers roam the streets to rid the community of hardships and suffering.</p><p>Lakhe, demon deities revered as protectors of people and crops, are thought to reside in the demonic mask. As the dancer dons the mask, the spirit is said to take over.</p><p>Bhaktapur was once a key site for the Ranjitkar Lakhe performances, but the art form vanished from the city after the 1934 earthquake.</p><p>\"Bhaktapur suffered the most damage during the 1934 earthquake,\" says Ganesh Ram Ranjit, treasurer of the Ranjitkar Group's Bhaktapur branch. \"The destruction left residents struggling to recover for a decade, making it nearly impossible to perform the costly Lakhe dance.\"</p><p>After 100 years, the Ranjitkar Lakhe Dance is making a return to Bhaktapur at this year's Indra Jatra. \"Reviving the dance after 100 years,\" Shakya says, \"is about preserving our culture for the next 300 years.\"</p>"
+      },
+      "excerpt": {
+        "rendered": "The rhythmic beat of the Dha echoes through a Bhaktapur alley, blending with the energetic footsteps of dancers..."
+      },
+      "date": "2024-10-05T16:45:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1545959570-a94084071b5d?w=800&h=400&fit=crop",
+      "categories": [4],
+      "yoast_head_json": {
+        "title": "Ranjitkar community reviving lost Lakhe dance after a century - COL Global News"
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "rendered": "Congress' 100-day campaign: Leaders advised to walk the talk, shun groupism"
+      },
+      "content": {
+        "rendered": "<p>The Nepali Congress is holding a '100-day campaign' to rejuvenate party committees, strengthen the bond between the party's local representatives and central leaders, and pacify the party's dissenters.</p><img src='https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&h=400&fit=crop' alt='Politics'/><p>The party's central committee meeting, which concluded on September 1, decided to run the 100-day campaign from September 23 to December 31.</p><p>Krishna Prasad Paudel, chief secretary at the party office, says many central leaders have already reached the districts they are assigned to run campaign activities.</p><p>One of the main objectives of the campaign is to renew party membership. \"We claim our party has 0.9 million members,\" Paudel said. \"During the campaign, leaders will check the trend of party members renewing their membership.\"</p><p>The campaign has been launched at a time when leaders have already started to devise their plans for the next general convention. As per the Congress statute, the party must hold its general convention every four years.</p><p>\"If we are to fight elections on our own [without an alliance], we need a strong organisation, therefore the party is emphasising strengthening the party by conducting campaigns,\" Paudel told the Post.</p>"
+      },
+      "excerpt": {
+        "rendered": "The Nepali Congress is holding a '100-day campaign' to rejuvenate party committees..."
+      },
+      "date": "2024-10-04T11:30:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&h=400&fit=crop",
+      "categories": [2],
+      "yoast_head_json": {
+        "title": "Congress' 100-day campaign: Leaders advised to walk the talk, shun groupism - COL Global News"
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "rendered": "Road disruptions raise risk of more home deliveries in districts"
+      },
+      "content": {
+        "rendered": "<p>Concerns are growing about a possible rise in home deliveries in several districts after road links were disrupted last week's devastating floods and landslides.</p><img src='https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=400&fit=crop' alt='Health'/><p>Officials at the Ministry of Health and Population said that they are aware of the growing risk and have instructed agencies concerned to start risk mapping.</p><p>\"The risk of home deliveries has grown due to last week's monsoon havoc,\" said Dr Bikash Devkota, director general at the Department of Health Services. \"We have instructed agencies concerned to monitor the situation and report back.\"</p><p>At least 233 people have been confirmed dead, while 22 others are still missing in the floods and landslides triggered by record-breaking precipitation in three days starting Thursday evening last week.</p><p>Maternal health experts say that the recent disaster could cause a severe setback to maternal and child health and also affect institutional delivery rate.</p><p>\"Due to the disruption in vehicular movements, many pregnant women may not be able to reach birthing centres,\" said Nisha Joshi, a public health official at the Family Welfare Division.</p>"
+      },
+      "excerpt": {
+        "rendered": "Concerns are growing about a possible rise in home deliveries in several districts..."
+      },
+      "date": "2024-10-04T08:00:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=400&fit=crop",
+      "categories": [1],
+      "yoast_head_json": {
+        "title": "Road disruptions raise risk of more home deliveries in districts - COL Global News"
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "rendered": "Nepal back to winning ways, finally"
+      },
+      "content": {
+        "rendered": "<p>Nepal national men's cricket team are finally finding their form as they defeated Oman by 56 runs in their third match of the Canada T20I Series to pull off their second victory in King City, Canada.</p><img src='https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=800&h=400&fit=crop' alt='Cricket'/><p>Nepal had beaten the same side by 37 runs in their first T20I game on Sunday to end their eight match winless streak across both T20 and one-day formats that stretched back to May's T20 World Cup warm-up game against Canada in Dallas, the United States.</p><p>The T20I double against Oman is a welcome boost to Rohit Paudel's men ahead of their tour to the US, where they will engage in a T20I bilateral series against the hosts.</p><p>The signs are promising as well. Gulsan Jha is in fine form. He scored a half-century and took a five-wicket haul in Nepal's one-wicket League 2 loss against Oman.</p><p>Captain Rohit Paudel is also gradually finding his strength with the bat. It was Paudel's unbeaten 56 that helped Nepal post 157-7 in King City on Wednesday. His patient 44-ball knock featured two fours and four sixes.</p><p>Kushal Bhurtel took a game-changing 3-10 in his magical 1.5 overs spell to restrict Oman to 101 that seized a 56-run victory on Wednesday.</p>"
+      },
+      "excerpt": {
+        "rendered": "Nepal national men's cricket team are finally finding their form as they defeated Oman..."
+      },
+      "date": "2024-10-04T13:45:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=800&h=400&fit=crop",
+      "categories": [3],
+      "yoast_head_json": {
+        "title": "Nepal back to winning ways, finally - COL Global News"
+      }
+    },
+    {
+      "id": 8,
+      "title": {
+        "rendered": "Dengue surge sparks critical blood shortage"
+      },
+      "content": {
+        "rendered": "<p>Ram Prasad Koirala, a resident of Nalagaun in Belkotgadhi Municipality, Nuwakot, spent all of Thursday racing around Kathmandu and Bhaktapur, desperately searching for platelets for his 13-year-old son, who has been infected with dengue.</p><img src='https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop' alt='Blood Donation'/><p>Doctors at the Maharajgunj-based Tribhuvan University Teaching Hospital, where his son is being treated, told Koirala to get platelets as his son's platelet count had dropped to a dangerously low count of 13,000 per microlitre of blood. A healthy count ranges from 150,000 to 450,000 platelets a microlitre.</p><p>\"The doctors have asked me to arrange six pints of platelets, but I could manage only one pint,\" a frustrated Koirala told the Post. \"I spent the whole day visiting several blood banks across Kathmandu and Bhaktapur, but still couldn't find donors.\"</p><p>Officials at the central blood bank said that the demand for platelet-rich plasma and platelet concentrate has tripled compared to the usual daily collection.</p><p>\"Demand for blood and blood components is about 400 pints a day, but we have been able to collect only around 100 pints,\" said Sanjeev Kumar Yadav, senior technical officer at the Central Blood Transfusion Service.</p><p>At least seven deaths and 14,975 infections have been reported from 76 of 77 districts across the country.</p>"
+      },
+      "excerpt": {
+        "rendered": "Ram Prasad Koirala spent all of Thursday racing around Kathmandu searching for platelets..."
+      },
+      "date": "2024-10-05T10:00:00",
+      "featured_image_src": "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800&h=400&fit=crop",
+      "categories": [1],
+      "yoast_head_json": {
+        "title": "Dengue surge sparks critical blood shortage - COL Global News"
+      }
+    }
+  ],
+  "siteInfo": {
+    "name": "COL Global News",
+    "description": "Stay informed with the latest news and updates from around the world",
+    "logo": "https://news.colglobal.org/img/logo.png",
+    "contact": {
+      "address": "Lazimpat, Kathmandu, Nepal",
+      "phone": "+977 980-234-8005"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/profile.php?id=61564920835213",
+      "instagram": "https://www.instagram.com/col.global1/"
+    },
+    "links": {
+      "col": "https://colglobal.org/",
+      "university": "https://uni.colglobal.org/",
+      "learn": "https://learn.colglobal.org/",
+      "euphoria": "https://euphoria.colglobal.org/",
+      "shop": "https://shop.colglobal.org/",
+      "job": "https://job.colglobal.org/"
+    }
+  }
+}
