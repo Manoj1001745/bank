@@ -14,7 +14,7 @@ export default function Home() {
    {post.slice(0, 2).map((a, index) => (
      <section key={a.id} className='py-4 fade-in' style={{animationDelay: `${index * 0.1}s`}}>
        <div className="container mx-auto px-2">
-        <div className='bg-gradient-to-r from-red-700 via-red-600 to-red-700 rounded-t-xl shadow-lg'>
+        <div className='bg-gradient-to-r from-red-500 via-red-500 to-red-600 rounded-t-xl shadow-lg'>
           <div className="flex items-center overflow-hidden">
             <span className="bg-red-900 rounded-t-xl text-white px-4 py-3 font-bold text-sm uppercase tracking-wide whitespace-nowrap flex-shrink-0">Breaking</span>
             <div className="flex-1 overflow-hidden">
@@ -37,7 +37,7 @@ export default function Home() {
      </section>
    ))}
 
-   <section className='py-4'>
+   <section className='py-8'>
      <div className="container mx-auto px-4 flex justify-center">
        <div className='ad-banner'>
          <img className='w-full max-w-[400px] mx-auto' src="https://news.colglobal.org/img/logo.png" alt="COL Global News" />
@@ -62,11 +62,9 @@ export default function Home() {
        </div>
      </div>
    </section>
-
-
-   <ProductByCat id={3} title="Sports" />
-
-
+   <section className='pt-4'>        
+     <ProductByCat id={3} title="Sports" />
+   </section>
    <ProductByCat id={1} title="Health" />
 
    <section className='py-2'> 
