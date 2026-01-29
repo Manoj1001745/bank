@@ -1,30 +1,31 @@
 "use client"
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import axios from "axios";
+import React from 'react'
 import { useParams } from 'next/navigation';
 import { FaCalendarAlt, FaUser, FaShare, FaFacebookF, FaTwitter, FaWhatsapp, FaArrowLeft } from 'react-icons/fa';
+import data from '@/data/data.json';
 
-function page() {
-    let {id}=useParams()
-    let [posts, setPosts]=useState([])
-    let [loading, setLoading]=useState(true)
+function Page() {
+    const {id} = useParams()
+    const postId = parseInt(id)
+    
+    const posts = data.posts.find(p => p.id === postId);
+    const relatedPosts = data.posts
+      .filter(p => p.id !== postId && 
+        posts && p.categories.some(cat => posts.categories.includes(cat)))
+      .slice(0, 4);
 
-    useEffect(() => {
-      console.log("ID:", id);
-      axios.get(`https://bankingkhabar.com/wp-json/wp/v2/posts/${id}`)
-        .then(res => {
-          setPosts(res.data);
-          setLoading(false);
-        });
-    }, [id]);
+    // Remove images from content to avoid duplication with featured image
+    const contentWithoutImages = posts?.content?.rendered?.replace(/<img[^>]*>/gi, '') || '';
 
-  if (loading) {
+  if (!posts) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-red-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600 text-lg">Loading article...</p>
+          <h1 className="text-2xl font-bold text-gray-800 mb-4">पोस्ट फेला परेन</h1>
+          <Link href="/" className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors">
+            गृहपृष्ठमा जानुहोस्
+          </Link>
         </div>
       </div>
     );
@@ -32,17 +33,15 @@ function page() {
 
   return (
    <div className="min-h-screen bg-gray-50">
-   {posts && posts.yoast_head_json && posts.content ? (
-     <>
      {/* Back Navigation */}
-     {/* <div className="bg-white border-b sticky top-0 z-40">
+     <div className="bg-white border-b">
        <div className="container mx-auto px-4 py-3">
          <Link href="/" className="inline-flex items-center gap-2 text-gray-600 hover:text-red-600 transition-colors">
            <FaArrowLeft />
            <span>Back to Home</span>
          </Link>
        </div>
-     </div> */}
+     </div>
 
      <section className='py-4'>
        <div className="container mx-auto px-4">
@@ -58,7 +57,7 @@ function page() {
              
              {/* Title */}
              <h1 className='font-bold text-2xl md:text-4xl text-gray-800 leading-tight mb-6'>
-               {posts.yoast_head_json.title}
+               {posts.yoast_head_json?.title || posts.title?.rendered}
              </h1>
              
              {/* Meta Info */}
@@ -69,7 +68,7 @@ function page() {
                </div>
                <div className="flex items-center gap-2">
                  <FaUser className="text-red-500" />
-                 <span>Banking Khabar</span>
+                 <span>Col News</span>
                </div>
              </div>
 
@@ -90,6 +89,17 @@ function page() {
              </div>
            </div>
 
+           {/* Featured Image */}
+           {posts.featured_image_src && (
+             <div className="px-6 md:px-10 py-6">
+               <img 
+                 src={posts.featured_image_src} 
+                 alt={posts.title?.rendered || 'Article image'} 
+                 className="w-full rounded-xl shadow-lg"
+               />
+             </div>
+           )}
+
            {/* Article Content */}
            <div className="p-6 md:p-10">
              <div 
@@ -103,7 +113,7 @@ function page() {
                  [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:my-4
                  [&_li]:my-2 [&_li]:text-gray-700
                  [&_blockquote]:border-l-4 [&_blockquote]:border-red-500 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:my-6 [&_blockquote]:bg-gray-50 [&_blockquote]:py-4 [&_blockquote]:rounded-r-lg' 
-               dangerouslySetInnerHTML={{ __html: posts.content.rendered }}
+               dangerouslySetInnerHTML={{ __html: contentWithoutImages }}
              ></div>
            </div>
 
@@ -111,24 +121,40 @@ function page() {
            <div className="p-6 md:p-10 bg-gray-50 border-t border-gray-100">
              <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                <div className="text-gray-500 text-sm">
-                 Thank you for reading Banking Khabar
+                 Thank you for reading Col News
                </div>
              </div>
            </div>
          </article>
+
+         {/* Related Posts */}
+         {relatedPosts.length > 0 && (
+           <div className="mt-12">
+             <h2 className="text-2xl font-bold text-gray-800 mb-6">सम्बन्धित समाचार</h2>
+             <div className="grid md:grid-cols-4 gap-6">
+               {relatedPosts.map((post) => (
+                 <Link key={post.id} href={`/details/${post.id}`} className="group">
+                   <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                     <img 
+                       src={post.featured_image_src} 
+                       alt={post.title?.rendered} 
+                       className="w-full h-[150px] object-cover"
+                     />
+                     <div className="p-4">
+                       <h3 className="text-base font-semibold text-gray-800 line-clamp-2 group-hover:text-red-600 transition-colors">
+                         {post.title?.rendered}
+                       </h3>
+                     </div>
+                   </div>
+                 </Link>
+               ))}
+             </div>
+           </div>
+         )}
        </div>
      </section>
-     </>
-   ) : (
-     <div className="min-h-screen flex items-center justify-center">
-       <div className="text-center">
-         <p className="text-gray-600 text-lg">Article not found</p>
-         <Link href="/" className="text-red-600 hover:underline mt-2 inline-block">Go back home</Link>
-       </div>
-     </div>
-   )}
    </div>
   )
 }
 
-export default page
+export default Page
