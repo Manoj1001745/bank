@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+:root{
+  --bg-color: #f9f9f9;
+  --text-color: #333333;
+  --primary-color: #b91c1c;
+  --secondary-color: #d01e1e;
+  --accent-color: #e2e8f0;
+}
 img {
   filter: brightness(80%) !important;
 }
@@ -130,4 +137,19 @@ img {
 
 .ad-banner:hover {
   transform: scale(1.02);
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
