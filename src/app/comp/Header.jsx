@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { IoMenu, IoClose, IoInformationCircle, IoMail, IoShieldCheckmark, IoNewspaper, IoMegaphone, IoCall } from "react-icons/io5";
 import data from "@/data/data.json";
+import logo from "../../../src/assets/logo.png";
 
 export default function Header() {
   const cat = data.categories;
@@ -45,8 +46,8 @@ export default function Header() {
         <div className="container mx-auto px-4 py-2 sm:py-3 flex justify-between items-center">
           <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
             <img
-              className="w-10 sm:w-12 md:w-[60px]"
-              src="https://news.colglobal.org/img/logo.png"
+              className="w-10 rounded-lg sm:w-12 md:w-[100px]"
+              src={logo.src}
               alt="colglobal Logo"
             />
           </Link>
@@ -68,15 +69,6 @@ export default function Header() {
               <IoCall className="text-base sm:text-lg text-red-400 group-hover:text-red-300 transition-colors" />
               <span className="hidden xs:inline">Contact</span>
             </Link>
-{/*             
-            <Link 
-              href="/privacy" 
-              className="group flex items-center gap-1.5 px-2 sm:px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"
-            >
-              <IoShieldCheckmark className="text-base sm:text-lg text-red-400 group-hover:text-red-300 transition-colors" />
-              <span className="hidden md:inline">Privacy</span>
-            </Link>
-             */}
             <Link 
               href="/blogs" 
               className="group flex items-center gap-1.5 px-2.5 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium bg-gradient-to-r from-red-600 to-red-500 text-white hover:from-red-500 hover:to-red-400 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
