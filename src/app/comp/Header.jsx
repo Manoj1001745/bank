@@ -91,13 +91,13 @@ export default function Header() {
       {/* Navbar */}
       <nav className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white sticky top-0 z-50 shadow-lg">
         <div className="container mx-auto flex items-center justify-between px-4 py-2 sm:py-3">
-          {/* Desktop Menu */}
-          <ul className="hidden lg:flex gap-1 xl:gap-2 flex-wrap">
+          {/* Desktop Menu - Shows on md screens and up */}
+          <ul className="hidden md:flex gap-1 lg:gap-1.5 xl:gap-2 flex-wrap">
             {cat.map((a) => (
               <li key={a.id}>
                 <Link
                   href={`/category/${a.id}`}
-                  className="block border border-red-400/50 px-3 xl:px-4 py-2 text-sm xl:text-base font-medium hover:bg-white hover:text-red-600 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md"
+                  className="block border border-red-400/50 px-2 md:px-2.5 lg:px-3 xl:px-4 py-1.5 md:py-2 text-xs md:text-sm lg:text-sm xl:text-base font-medium hover:bg-white hover:text-red-600 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-md whitespace-nowrap"
                 >
                   {a.name}
                 </Link>
@@ -105,38 +105,37 @@ export default function Header() {
             ))}
           </ul>
 
-          {/* Mobile: Date/Time Display */}
-          <div className="lg:hidden flex items-center gap-2 text-xs sm:text-sm">
+          {/* Mobile: Date/Time Display - Shows below md */}
+          <div className="md:hidden flex items-center gap-2 text-xs sm:text-sm">
             <span className="text-red-100 hidden xs:inline">{formatDate(currentTime).split(",")[0]}</span>
             <span className="bg-white/20 px-2 py-1 rounded-full font-mono">
               {formatTime(currentTime)}
             </span>
           </div>
 
-          {/* Mobile Toggle Button */}
+          {/* Mobile Toggle Button - Shows below md */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-2xl sm:text-3xl text-white lg:hidden p-2 hover:bg-red-800 rounded-lg transition-all duration-200 active:scale-95"
+            className="flex items-center justify-center text-2xl sm:text-3xl text-white md:hidden p-2 hover:bg-red-800 rounded-lg transition-all duration-200 active:scale-95"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
             {menuOpen ? <IoClose /> : <IoMenu />}
           </button>
         </div>
 
-        {/* Mobile Menu Overlay */}
-        <div
-          className={`lg:hidden fixed inset-0 top-[52px] sm:top-[60px] bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
-            menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-          onClick={() => setMenuOpen(false)}
-        />
+        {/* Mobile Menu Overlay - Shows below md */}
+        {menuOpen && (
+          <div
+            className="md:hidden fixed inset-0 top-[104px] sm:top-[116px] bg-black/50 backdrop-blur-sm transition-opacity duration-300 z-40"
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
 
-        {/* Mobile Menu Panel */}
-        <div
-          className={`lg:hidden fixed top-[52px] sm:top-[60px] left-0 right-0 bg-gradient-to-b from-red-700 to-red-800 shadow-2xl transition-all duration-300 ease-out max-h-[calc(100vh-60px)] overflow-y-auto ${
-            menuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-          }`}
-        >
+        {/* Mobile Menu Panel - Shows below md */}
+        {menuOpen && (
+          <div
+            className="md:hidden fixed top-[104px] sm:top-[116px] left-0 right-0 bg-gradient-to-b from-red-700 to-red-800 shadow-2xl transition-all duration-300 ease-out max-h-[calc(100vh-116px)] overflow-y-auto z-50"
+          >
           <ul className="flex flex-col p-4 gap-1">
             {cat.map((a, index) => (
               <li
@@ -155,15 +154,16 @@ export default function Header() {
             ))}
           </ul>
         </div>
+        )}
       </nav>
 
-      {/* Time & Date Section - Desktop Only */}
-      <section className="hidden lg:block py-2 sm:py-3 bg-white border-b-2 border-gray-100">
+      {/* Time & Date Section - Shows on md and up */}
+      <section className="hidden md:block py-2 sm:py-3 bg-white border-b-2 border-gray-100">
         <div className="container mx-auto px-4 flex justify-end items-center gap-3">
-          <span className="text-gray-600 text-sm font-medium">
+          <span className="text-gray-600 text-xs md:text-sm font-medium">
             {formatDate(currentTime)}
           </span>
-          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-sm font-mono min-w-[100px] text-center">
+          <span className="bg-gradient-to-r from-red-600 to-red-500 text-white px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-semibold shadow-sm font-mono min-w-[90px] md:min-w-[100px] text-center">
             {formatTime(currentTime)}
           </span>
         </div>
