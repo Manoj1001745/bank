@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import logo from '../../../src/assets/logo.png';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,7 +41,7 @@ function Footer() {
             <Link href="/">
               <img 
                 className='w-[100px] rounded-lg mb-4 hover:opacity-90 transition-opacity' 
-                src="https://news.colglobal.org/img/logo.png" 
+                src={logo.src}
                 alt="colglobal Logo" 
               />
             </Link>
